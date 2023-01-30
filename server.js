@@ -5,6 +5,7 @@ const { connectToDb, getDb } = require('./db');
 const PORT = 3000;
 
 const app = express();
+app.use(express.json());
 
 let db;
 
